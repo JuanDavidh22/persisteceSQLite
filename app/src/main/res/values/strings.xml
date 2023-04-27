@@ -2,4 +2,21 @@
     <string name="app_name">SQLite_Lab</string>
     <string name="select_btn">Mostrar Cervezas</string>
     <string name="add_btn">Añadir Cerveza</string>
+    <string name="brand">Brand:</string>
+    <string name="brand_hint">Enter product brand</string>
+    <string name="color">Beer color:</string>
+    <string name="color_hint">Enter beer color</string>
+    <string name="score">Beer score:</string>
+    <string name="country">Beer country:</string>
+    <string name="country_hint">Enter beer country</string>
+    <string name="price">Product price:</string>
+    <string name="price_hint">Enter product price</string>
+    <string name="insert_button">Insert Beer</string>
+    <string-array name="stars">
+        <item>⭐</item>
+        <item>⭐⭐</item>
+        <item>⭐⭐⭐</item>
+        <item>⭐⭐⭐⭐</item>
+        <item>⭐⭐⭐⭐⭐</item>
+    </string-array>
 </resources>

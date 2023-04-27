@@ -34,12 +34,13 @@ public class BeerDatabaseHelper extends SQLiteOpenHelper {
                         "%s INTEGER);", COL_ID, COL_BRAND,
                 COL_COLOR, COL_SCORE, COL_COUNTRY, COL_PRICE);
         db.execSQL(query);
-        insertBeer(db, "Poker", "Rubia", 4, "Colombia", 3000);
-        insertBeer(db, "Aguila", "Rubia", 4, "Colombia", 3000);
-        insertBeer(db, "Club Colombia", "Roja", 4, "Colombia", 3700);
+        insertBeer("Poker", "Rubia", 4, "Colombia", 3000);
+        insertBeer("Aguila", "Rubia", 4, "Colombia", 3000);
+        insertBeer("Club Colombia", "Roja", 4, "Colombia", 3700);
     }
 
-    public boolean insertBeer(SQLiteDatabase db, String brand, String color, int score, String country, int price) {
+    public boolean insertBeer(String brand, String color, int score, String country, int price) {
+        SQLiteDatabase db = this.getWritableDatabase();
         ContentValues beerValues = new ContentValues();
         beerValues.put(COL_BRAND, brand);
         beerValues.put(COL_COLOR, color);
