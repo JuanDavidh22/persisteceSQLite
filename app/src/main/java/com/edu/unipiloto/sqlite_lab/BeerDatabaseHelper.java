@@ -68,14 +68,14 @@ public class BeerDatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
-    public Cursor getData(int id) {
+    public Cursor findBeerById(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = String.format("SELECT * FROM " + TABLE_NAME + " WHERE %s=" + id + "", COL_ID);
         Cursor result = db.rawQuery(query, null);
         return result;
     }
 
-    public Cursor findDataColor(String color) {
+    public Cursor findBeerByColor(String color) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = String.format("SELECT * FROM " + TABLE_NAME + " WHERE %s='" + color + "'", COL_COLOR);
         Cursor result = db.rawQuery(query, null);

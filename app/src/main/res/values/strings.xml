@@ -2,6 +2,7 @@
     <string name="app_name">SQLite_Lab</string>
     <string name="select_btn">Mostrar Cervezas</string>
     <string name="add_btn">Añadir Cerveza</string>
+    <string name="id">ID:</string>
     <string name="brand">Brand:</string>
     <string name="brand_hint">Enter product brand</string>
     <string name="color">Beer color:</string>
@@ -18,5 +19,9 @@
         <item>⭐⭐⭐</item>
         <item>⭐⭐⭐⭐</item>
         <item>⭐⭐⭐⭐⭐</item>
+    </string-array>
+    <string-array name="options">
+        <item>ID</item>
+        <item>Color</item>
     </string-array>
 </resources>
