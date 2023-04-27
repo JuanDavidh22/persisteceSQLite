@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SQLite_Lab</string>
+    <string name="select_btn">Mostrar Cervezas</string>
+    <string name="add_btn">Añadir Cerveza</string>
 </resources>
